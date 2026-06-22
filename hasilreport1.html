@@ -556,10 +556,10 @@ body {
                     <li class="passes">passes: <em>1</em></li>
                     <li class="pending">pending: <em>0</em></li>
                     <li class="failures">failures: <em>0</em></li>
-                    <li class="duration">duration: <em>6s</em></li>
+                    <li class="duration">duration: <em>5.9s</em></li>
                 </ul>
             </div>
-            <ul id="report"><li class="suite"><h1>Google Search Test</h1><ul><li class="test pass slow"><h2>Visit SauceDemo dan cek page title<span class="duration">5997ms</span></h2><pre><code>async function (){
+            <ul id="report"><li class="suite"><h1>Google Search Test</h1><ul><li class="test pass slow"><h2>Visit SauceDemo dan cek page title<span class="duration">5921ms</span></h2><pre><code>async function (){
         driver = await new Builder().forBrowser(&#x27;chrome&#x27;).build();
         await driver.get(&#x27;https://www.saucedemo.com&#x27;);
         let inputUsername = await driver.findElement(By.css(&#x27;[data-test=&#x22;username&#x22;]&#x27;))
@@ -580,7 +580,6 @@ body {
         await buttonCart.isDisplayed();
         const actions = driver.actions({async: true});
         let dropdownSort = await driver.findElement(By.xpath(&#x27;//select[@data-test=&#x22;product-sort-container&#x22;]&#x27;));
-        let sortZtoA = await driver.findElement(By.xpath(&#x27;//option[@value=&#x22;za&#x22;]&#x27;));
         
         await dropdownSort.click();
         await actions.move({origin: dropdownSort}).perform();  // kursor gerak ke dropdown

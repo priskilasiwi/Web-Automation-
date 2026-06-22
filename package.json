@@ -4,7 +4,8 @@
     "description": "Test Selenium Webdriver using Mocha",
     "scripts": {
         "test": "mocha test --recursive --timeout 6000 --reporter mochawesome",
-        "report": "mocha test --recursive --timeout 10000 --reporter mocha-simple-html-reporter --reporter-options output=hasilreport.html"
+        "report": "mocha test/test-sauce.js --recursive --timeout 10000 --reporter mocha-simple-html-reporter --reporter-options output=hasilreport1.html",
+        "sesi10": "mocha test/test-sauce2.js --recursive --timeout 10000"
     },
     "dependencies": {
         "selenium-webdriver": "^4.17.0"
