@@ -38,7 +38,7 @@ describe ('Google Search Test', function () {
 
         let select = new Select(dropdownSort);
         await select.selectByVisibleText('Name (Z to A)');
-        await driver.sleep(1000);
+        await driver.sleep(500);
 
         await driver.quit();
           
